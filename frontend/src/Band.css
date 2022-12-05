@@ -1,0 +1,14 @@
+table {
+    border-spacing: 30px;
+    table-layout: fixed;
+}
+
+table, th, td {
+    border: 1px solid white ;
+    border-collapse: collapse;
+    border-style: solid;
+}
+
+.band_label {
+    background: linear-gradient(to right, #f64c72, #e86582);
+}

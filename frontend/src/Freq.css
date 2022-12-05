@@ -1,0 +1,10 @@
+input {
+    color: white;
+    background: linear-gradient(to right, #df788f, #e0a0ae);
+}
+
+.freq_label {
+    color: white;
+    background: linear-gradient(to right, #8b3447, #834350);
+    width: 30px;
+}

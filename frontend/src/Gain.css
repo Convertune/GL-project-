@@ -1,0 +1,19 @@
+.gain_output {
+  padding: 5px 16px;
+  border-radius: 3px;
+  color: #fff;
+  width: 14px;
+  max-width: 14px;
+}
+
+th, td {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+table {
+  border-spacing: 30px;
+  table-layout: fixed;
+}
