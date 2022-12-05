@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import "./Gain.css";
 
-const Gain = ({json, json_key}) => {
+const Gain = ({params, g_id, g_param_name, g_label}) => {
 	const [value, setValue] = useState(0);
-	const min = -3;
-	const max = 3;
+	const min = -20;
+	const max = 6;
 
-	json[json_key] = value;
+  const gain_id = Number(g_id);
 
-	console.log(json);
+  params[gain_id] = { "id": gain_id, "val": value, "name": g_param_name };
 
 	const handleChange = (event) => {
 		//const number_validated = event.target.value.replace(/^(-)|[^0-9]+/g, '$1');
@@ -19,6 +19,11 @@ const Gain = ({json, json_key}) => {
   return (
 		<form> 
 			<table>
+        <thead>
+          <tr className = "gain_label">
+            <th colSpan={2}>{g_label}</th>
+          </tr>
+        </thead>  
         <tr>
           <td>
             <input 

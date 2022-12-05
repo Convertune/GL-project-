@@ -3,7 +3,7 @@ import useWebSocket from "react-use-websocket";
 import "./ConvertButton.css";
 
 const ConvertButton = ({obj}) => {
-  const socketUrl = "ws://localhost:3001"; 
+  const socketUrl = "ws://localhost:3002"; 
 
   const { sendJsonMessage, lastMessage } = useWebSocket(socketUrl);
 

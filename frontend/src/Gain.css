@@ -6,6 +6,11 @@
   max-width: 14px;
 }
 
+.gain_label {
+  color: white;
+  background: linear-gradient(to right, #8b3447, #834350);
+}
+
 th, td {
   padding-top: 1px;
   padding-bottom: 1px;

@@ -1,0 +1,35 @@
+.ft_label {
+  color: white;
+  background: linear-gradient(to right, #8b3447, #834350);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+table {
+  border-spacing: 30px;
+  table-layout: fixed;
+	width: max-content;
+}
+
+select {
+
+  /* styling */
+  background-color: #242582;
+	color: white;
+  border: thin solid blue;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1em;
+  padding: 0.5em 0.65em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

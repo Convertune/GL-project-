@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import "./Freq.css";
 
-const Freq = ({json, json_key, freq_label}) => {
-	const [value, setValue] = useState(0);
-	const min = 0;
+const Freq = ({params, f_id, f_label, f_param_name}) => {
+	const [value, setValue] = useState(20);
+	const min = 20;
 	const max = 22000;
 
-	json[json_key] = value;
+	const freq_id = Number(f_id);
 
-	console.log(json);
+	params[freq_id] = { "id": freq_id, "val": value, "name": f_param_name };
+
+	console.log(params[freq_id]);
 
 	const handleChange = (event) => {
 		const number_validated = event.target.value.replace(/\D/g, '');
@@ -20,7 +22,7 @@ const Freq = ({json, json_key, freq_label}) => {
 		<form>
 			<table>
 				<tr>
-					<td className = "freq_label">{freq_label}</td>
+					<td className = "freq_label">{f_label}</td>
 					<td>
 						<input 
 							value={value} 
