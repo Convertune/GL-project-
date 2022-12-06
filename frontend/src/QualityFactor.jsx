@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./QualityFactor.css";
 
 const QualityFactor = ({params, q_id, q_label, q_param_name}) => {
-  const [value, setValue] = useState(0.1);
+  const [value, setValue] = useState(0.5);
 	const min = 0.1;
 	const max = 6;
 

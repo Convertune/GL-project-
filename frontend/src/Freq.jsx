@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import "./Freq.css";
 
-const Freq = ({params, f_id, f_label, f_param_name}) => {
-	const [value, setValue] = useState(20);
+const Freq = ({params, f_start_value, f_id, f_label, f_param_name}) => {
+	const start_value = Number(f_start_value)
+	const [value, setValue] = useState(start_value);
 	const min = 20;
 	const max = 22000;
 

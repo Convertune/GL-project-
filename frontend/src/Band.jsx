@@ -8,7 +8,7 @@ import QualityFactor from './QualityFactor';
 const Band = ({
   params, 
   g_id, g_label, g_param_name, 
-  f_id, f_label, f_param_name, 
+  f_id, f_label, f_param_name, f_start_value,
   b_label,
   q_id, q_label, q_param_name,
   t_id, t_param_name, t_label
@@ -21,6 +21,7 @@ const Band = ({
           <Freq 
             params = {params} 
             f_id = {f_id} 
+            f_start_value = {f_start_value}
             f_label = {f_label} 
             f_param_name = {f_param_name}
           />

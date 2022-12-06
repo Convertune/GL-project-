@@ -7,7 +7,7 @@ const Form = () => {
 
   const params = [];
 
-  const json = { "eq_parser": params };
+  const json = { "eq_params": params };
  
 	return (
 		<><div className = "my_header">
@@ -22,6 +22,7 @@ const Form = () => {
             f_id='0'
 						f_param_name='1_freq'
 						f_label='F1'
+            f_start_value='125'
             g_id='1'
             g_param_name='1_qain'
             g_label = 'Gain 1'  
@@ -40,6 +41,7 @@ const Form = () => {
             f_id='4'
 						f_param_name='2_freq'
 						f_label='F2'
+            f_start_value='250'
             g_id='5'
             g_param_name='2_qain' 
             g_label = 'Gain 2' 
@@ -58,6 +60,7 @@ const Form = () => {
             f_id='8'
 						f_param_name='3_freq'
 						f_label='F3'
+            f_start_value='500'
             g_id='9'
             g_param_name='3_qain'
             g_label = 'Gain 3'  
@@ -76,6 +79,7 @@ const Form = () => {
             f_id='12'
 						f_param_name='4_freq'
 						f_label='F4'
+            f_start_value='1000'
             g_id='13'
             g_param_name='4_qain'
             g_label = 'Gain 4'  
@@ -94,6 +98,7 @@ const Form = () => {
             f_id='16'
 						f_param_name='5_freq'
 						f_label='F5'
+            f_start_value='2000'
             g_id='17'
             g_param_name='5_qain'
             g_label = 'Gain 5'  
@@ -114,6 +119,7 @@ const Form = () => {
             f_id='20'
 						f_param_name='6_freq'
 						f_label='F6'
+            f_start_value='4000'
             g_id='21'
             g_param_name='6_qain'
             g_label = 'Gain 6'  
@@ -132,6 +138,7 @@ const Form = () => {
             f_id='24'
 						f_param_name='7_freq'
 						f_label='F7'
+            f_start_value='8000'
             g_id='25'
             g_param_name='7_qain'
             g_label = 'Gain 7'  
@@ -150,6 +157,7 @@ const Form = () => {
             f_id='28'
 						f_param_name='8_freq'
 						f_label='F8'
+            f_start_value='12000'
             g_id='29'
             g_param_name='8_qain'
             g_label = 'Gain 8'  
@@ -168,6 +176,7 @@ const Form = () => {
             f_id='32'
 						f_param_name='9_freq'
 						f_label='F9'
+            f_start_value='14000'
             g_id='33'
             g_param_name='9_qain'
             g_label = 'Gain 9'  
@@ -186,6 +195,7 @@ const Form = () => {
             f_id='36'
 						f_param_name='10_freq'
 						f_label='F10'
+            f_start_value='18000'
             g_id='37'
             g_param_name='10_qain'
             g_label = 'Gain 10'  
